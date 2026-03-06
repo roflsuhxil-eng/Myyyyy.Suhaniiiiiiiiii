@@ -1,3 +1,4 @@
+```javascript
 function openStart(){
 
 document.getElementById("envelope").style.display="none";
@@ -30,12 +31,13 @@ document.getElementById("nextBtn").classList.remove("hidden");
 
 function showLetter(){
 
-document.getElementById("letterPopup").classList.remove("hidden");
+document.getElementById("letterPopup").classList.add("show");
 
 }
 
 function closeLetter(){
 
-document.getElementById("letterPopup").classList.add("hidden");
+document.getElementById("letterPopup").classList.remove("show");
 
 }
+```
