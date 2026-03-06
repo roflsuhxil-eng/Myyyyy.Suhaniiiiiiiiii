@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tum Akeli Nahi Ho</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Suhani 🤍</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,32 +13,65 @@
 
 <h1>Hey Suhaniiii 🤍</h1>
 
-<button onclick="showMessage()">Click Here</button>
+<div id="envelope" class="envelope" onclick="openStart()">
+💌
+<p class="small">Click the letter</p>
+</div>
 
-<p id="msg1"></p>
-<p id="msg2"></p>
-<p id="msg3"></p>
+<div id="mainContent" class="hidden">
 
-<div id="foodQuestion" style="display:none;">
+<button onclick="showFood()">Click Here</button>
 
-<p>🍽️ Kuch khaya?</p>
+<div id="foodSection" class="hidden card">
 
-<button onclick="yesFood()">Haan</button>
-<button onclick="noFood()">Nahi</button>
+<p>🍳 Breakfast kare Suhani Madam</p>
+<p>🍛 Lunch kare Suhani Madam</p>
+<p>🍽 Dinner kare Suhani Madam</p>
+
+<p class="question">Kuch khaya? 😋</p>
+
+<button onclick="haan()">Haan</button>
+<button onclick="nahi()">Nahi</button>
+
+<p id="reply"></p>
+
+<button id="nextBtn" class="hidden" onclick="showLetter()">Next</button>
 
 </div>
 
-<p id="response"></p>
-
-<div id="nextBtn" style="display:none;">
-<button onclick="showNote()">Next ➜</button>
 </div>
 
-<p id="note"></p>
+</div>
 
-<a href="https://t.me/justsuhxil" target="_blank">
-<button class="talk">💬 Talk To Me</button>
-</a>
+<div id="letterPopup" class="popup hidden">
+
+<div class="popupBox">
+
+<h3>💌 Letter</h3>
+
+<p>
+
+Meriii Suhaniiiii 🤍✨  
+<br><br>
+
+Tum kabhi apne aap ko akela mat samajhna 🫶  
+Main hamesha tumhare saath hoon 🤍  
+<br><br>
+
+Har waqt… har ek time ⏳  
+<br><br>
+
+Kuch bhi ho tum mujhse share kar sakti ho 💬  
+<br><br>
+
+Take care of yourself 🌸  
+Aur khana time se khana 😌  
+
+</p>
+
+<button onclick="closeLetter()">Close</button>
+
+</div>
 
 </div>
 
