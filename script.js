@@ -1,67 +1,41 @@
-function showMessage(){
+function openStart(){
 
-document.getElementById("msg1").innerText =
-"🍳 Breakfast kare Suhani madam";
+document.getElementById("envelope").style.display="none";
 
-document.getElementById("msg2").innerText =
-"🍱 Lunch kare Suhani madam";
-
-document.getElementById("msg3").innerText =
-"🍲 Dinner kare Suhani madam";
-
-document.getElementById("foodQuestion").style.display="block";
+document.getElementById("mainContent").classList.remove("hidden");
 
 }
 
-function yesFood(){
+function showFood(){
 
-document.getElementById("response").innerText =
-"Veryyy Good Merii Pyariiiii Good Girllll 🤍";
-
-document.getElementById("nextBtn").style.display="block";
-
-heartBurst();
+document.getElementById("foodSection").classList.remove("hidden");
 
 }
 
-function noFood(){
+function haan(){
 
-document.getElementById("response").innerText =
-"Please kuch kha lo na… tum to ache bacheee ho na 🥺 good girl ho na, so please kuch kha lo 🤍";
+document.getElementById("reply").innerHTML="Veryyy Good Merii Pyariiiii Good Girllll 💖";
 
-document.getElementById("nextBtn").style.display="block";
-
-}
-
-function showNote(){
-
-document.getElementById("note").innerText =
-"🤍 Meriii Suhaniiiii 🤍\n\nTum kabhi apne aap ko akela mat samajhna 🫶\nMain hamesha tumhare saath hoon har waqt, har ek time.\n\nAgar kuch bhi ho — chhota ya bada — mujhse zaroor share karna 💬\nTum important ho aur tumhari feelings bhi important hain.\n\nAlways take care of yourself Suhaniii 🌸";
+document.getElementById("nextBtn").classList.remove("hidden");
 
 }
 
-function heartBurst(){
+function nahi(){
 
-for(let i=0;i<25;i++){
+document.getElementById("reply").innerHTML="Please kuch kha lo na 🥺 Tum to ache bache ho na good girl ho na 🤍";
 
-let heart=document.createElement("div");
-
-heart.className="heart";
-
-heart.innerHTML="❤️";
-
-heart.style.left=Math.random()*100+"vw";
-
-heart.style.bottom="0px";
-
-heart.style.fontSize=(Math.random()*25+15)+"px";
-
-document.body.appendChild(heart);
-
-setTimeout(()=>{
-heart.remove();
-},4000);
+document.getElementById("nextBtn").classList.remove("hidden");
 
 }
+
+function showLetter(){
+
+document.getElementById("letterPopup").classList.remove("hidden");
+
+}
+
+function closeLetter(){
+
+document.getElementById("letterPopup").classList.add("hidden");
 
 }
